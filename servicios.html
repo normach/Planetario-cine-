@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú del Restaurante</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #d35400;
+      margin-bottom: 40px;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .plato {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .plato:hover {
+      transform: scale(1.02);
+    }
+
+    .plato img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .plato-info {
+      padding: 15px;
+    }
+
+    .plato-nombre {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .plato-descripcion {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .plato-precio {
+      font-size: 18px;
+      font-weight: bold;
+      color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Menú del planetario</h1>
+
+  <div class="combo1">
+    <div class="combos">
+      <img src="palomitas.jpg">
+      <div class="combo1-info">
+        <div class="plato-nombre">combo1</div>
+        <div class="plato-descripcion">1palomitas chicas,1refresco mediano,1 icce.</div>
+        <div class="plato-precio">$250</div>
+      </div>
+    </div>
+
+    <div class="combo2">
+      <img src="nachos.jpg">
+      <div class="combo2-info">
+        <div class="plato-nombre">combo2</div>
+        <div class="plato-descripcion">2 palomitas chicas, 1 refresco grande,2 icce, 1 skincles.</div>
+        <div class="plato-precio">$380</div>
+      </div>
+    </div>
+
+    <div class="combo3">
+      <img src="icce.jpg">
+      <div class="combo3-info">
+        <div class="plato-nombre">combo3</div>
+        <div class="plato-descripcion">2 palomitas grandes, 2 refrescos medianos,2 icce, dulces.</div>
+        <div class="plato-precio">$450</div>
+      </div>
+    </div>
+	
+    </div>
+  </div>
+
+</body>
+</html>
+
